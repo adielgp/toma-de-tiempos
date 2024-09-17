@@ -1,1 +1,75 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toma de Tiempos</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div1">
+        <h1>Times</h1>
+        <div class="div1">
+            <input type="text" name="" id="textoreferencia" placeholder="Referencia">
+            <select name="" id="selectreferencia">
+                <option></option>
+                <option>Albondiga</option>
+                <option>Butifarra</option>
+                <option>Chorizo</option>
+                <option>Chuleta</option>
+                <option>Hamburguesa</option>
+                <option>Jamon</option>
+                <option>Morcilla</option>
+                <option>Mortadela</option>
+                <option>Salchicha</option>
+                <option>Salchichon</option>
+                <option>Tocineta</option>
+            </select>
+            <input type="text" name="" id="textoactividad" placeholder="Actividad">
+            <select name="" id="selectactividad">
+                <option></option>
+                <option>Dosificar</option>
+                <option>Moler</option>
+                <option>Mezclar</option>
+                <option>Pesar</option>
+                <option>Formar</option>
+                <option>Embutir</option>
+                <option>Envasar</option>
+                <option>Congelar</option>
+                <option>Cocinar</option>
+                <option>Enfriar</option>
+                <option>Separar</option>
+                <option>Etiquetar</option>
+                <option>Sellar</option>
+                <option>Termoencoger</option>
+                <option>Tajar</option>
+                <option>Empacar</option>
+            </select>
+            <input type="text" name="" id="textooperario" placeholder="Operario">
+            <select name="" id="selectoperario">
+                <option></option>
+                <option>Hombre</option>
+                <option>Mujer</option>
+            </select>
+        </div>
+        <br><br><br><br>
+        <div class="div2">
+            <input type="button" value="EXPORT_"onclick="export_time()">
+            <input type="button" value="DELETE"onclick="delete_time()">
+            <label for="">Dates: </label>
+            <label for="" id="numerodatos"></label>
+            <br><br>
+            <input type="button" value="__RUN__" onclick="run_time()" id="starbutton">
+            <input type="button" value="_PAUSE_" onclick="pause_time()">
+            <input type="button" value="_STOP__" onclick="stop_time()">
+            <input type="button" value="RETURN_" onclick="return_time()">
+        </div>
+        <br>
+    </div>
+    <div class="div3">
+        <table id="tabladatostiempo"></table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
