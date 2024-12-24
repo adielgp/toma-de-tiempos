@@ -73,7 +73,7 @@ function actualizar_tabla(){
     //tabla_tiempos.rows[datoMinimo+1].cells[0].contentEditable=true;
     //tabla_tiempos.rows[datoMinimo+1].cells[0].focus();
     body.appendChild(tabla_tiempos);
-    label_datos.textContent=number_dates;
+    label_datos.textContent=array_datos_tiempo.length;
 }
 
 function run_time(){
