@@ -70,8 +70,8 @@ function actualizar_tabla(){
     tabla_tiempos.replaceChildren();
     tabla_tiempos.appendChild(tblHeader);
     tabla_tiempos.appendChild(tblBody);
-    tabla_tiempos.rows[number_dates].cells[0].contentEditable=true;
-    tabla_tiempos.rows[number_dates].cells[0].focus();
+    tabla_tiempos.rows[datoMinimo].cells[0].contentEditable=true;
+    tabla_tiempos.rows[datoMinimo].cells[0].focus();
     body.appendChild(tabla_tiempos);
     label_datos.textContent=number_dates;
 }
