@@ -17,7 +17,7 @@ let start_time, end_time, calc_time=0;
 let end_time_midd, calc_time_midd=0;
 let button_start=document.getElementById("starbutton");
 let label_datos=document.getElementById("numerodatos");
-let number_dates;
+let number_dates, datoMinimo;
 
 actualizar_tabla();
 
@@ -56,7 +56,8 @@ function actualizar_tabla(){
     tblHeader.appendChild(hilera);
     tblBody=document.createElement("tbody");
     number_dates=array_datos_tiempo.length;
-    for(i=0;i<number_dates;i++){
+    datoMinimo=Math.max(number_dates-10,-1);
+    for(i=number_dates-1;i>datoMinimo;i--){
         hilera = document.createElement("tr");
         for(j=0;j<array_campos.length;j++){
             celda = document.createElement("td");
